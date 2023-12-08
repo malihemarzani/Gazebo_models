@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="1mm_line">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <pose>0.3 -0.03 0 1.5708 0 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>0.0012 0.0012 0.0012</scale>
+            <uri>model://1mm_line/meshes/1mm_line_test.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose>0.3 -0.03 0 1.5708 0 3.14159</pose>
+        <geometry>
+          <mesh>
+            <scale>0.0012 0.0012 0.0012</scale>
+            <uri>model://1mm_line/meshes/1mm_line_test.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>1.0 0.5 0.0 1.0</ambient>
+          <diffuse>1.0 0.5 0.0 1.0</diffuse>
+          <specular>0.2 0.2 0.2 64</specular>
+          <emissive>0.1 0.0 0.1 1.0</emissive>
+        </material>   
+      </visual>
+    </link>
+  </model>
+</sdf>
+
